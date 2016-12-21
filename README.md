@@ -42,14 +42,20 @@ temp.temporizar5(0,0,0,0);
 -La cuarta cifra de la función es la correspondiente a los segundos.
 
 
-                        dias  horas   minutos   segundos
-                          |     |       |          |
+                        dias horas minutos  segundos
+                          |     |     |        |
 Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20);
 
 En este caso 1 dia 3 horas 40 minutos y 20 segundos.
 
 
 #Usos
+
+  if (temp.temporizar1(1, 0, 0, 0) == true) { 
+    digitalWrite(13, !digitalRead(13));    //se encenderá o apagará cuando transcurra un dia.
+  }
+  
+  cuando el condicional es "true" se ejecutará lo que tengamos dentro del if.
 
 
 
