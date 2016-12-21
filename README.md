@@ -30,9 +30,13 @@ temp.temporizar1(0,0,2,0); --------> En esta linea programaremos el tiempo desea
 De este modo:
 
 temp.temporizar1(0,0,0,0);
+
 temp.temporizar2(0,0,0,0);
+
 temp.temporizar3(0,0,0,0);
+
 temp.temporizar4(0,0,0,0);
+
 temp.temporizar5(0,0,0,0);
 
 
@@ -53,7 +57,9 @@ En este caso 1 dia 3 horas 40 minutos y 20 segundos.
 #Usos
   
   //se encenderá o apagará cuando transcurra un dia.
-  if (temp.temporizar1(1, 0, 0, 0) == true) {digitalWrite(13, !digitalRead(13));} 
+  
+  if (temp.temporizar1(1, 0, 0, 0) == true) 
+  {digitalWrite(13, !digitalRead(13));} 
    
  
   
