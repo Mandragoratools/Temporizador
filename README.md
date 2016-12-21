@@ -37,13 +37,15 @@ temp.temporizar5(0,0,0,0);
 
 
 -La primera cifra de la función es la correspondiente a los dias.
+
 -La segunda cifra de la función es la correspondiente a las horas.
+
 -La tercera cifra de la función es la correspondiente a los minutos.
+
 -La cuarta cifra de la función es la correspondiente a los segundos.
 
-.                        dias  horas  minutos   segundos
-                          |     |        |         |
-Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20);
+
+*Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20);
 
 En este caso 1 dia 3 horas 40 minutos y 20 segundos.
 
