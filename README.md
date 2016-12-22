@@ -1,9 +1,13 @@
 #Temporizador 
 Copyrigth (c) Mandragora Tools 2016
 
+Especial agradecimiento
+
 [mandragoratools@gmail.com](mailto:mandragoratools@gmail.com)
 
 [http://bit.ly/mandragoratools](http://bit.ly/mandragoratools)
+
+*Especial agradecimiento a Alfaville, Lucario448  y surbyte
 
 
 #¿Que es Temporizador?
@@ -16,58 +20,49 @@ Nos sirve para sustituir la función delay(); en nuestros sckechts y evitar así
 
 Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizador" seguido del nombre que deseemos en este caso "temp".
 
-temp.encender();     --------> Esta linea nos servirá para activar el contador del tiempo.
-                              (esta linea debe encontrarse en el void loop para que todo funciones correctamente).
-
-temp.temporizar1(0,0,2,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
+temp.temporizar(0,0,2,0,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
 
 
 
 #Tener en cuenta
 
-*El temporizador nos permitirá programar hasta 5 temporizaciones como maximo en nuestro scketch.
+-La 1ª cifra de la función es la correspondiente a los dias.
 
-De este modo:
+-La 2ª cifra de la función es la correspondiente a las horas.
 
-temp.temporizar1(0,0,0,0);
+-La 3ª cifra de la función es la correspondiente a los minutos.
 
-temp.temporizar2(0,0,0,0);
+-La 4ª cifra de la función es la correspondiente a los segundos.
 
-temp.temporizar3(0,0,0,0);
+-La 5ª cifra de la función es la correspondiente a los milisegundos.
 
-temp.temporizar4(0,0,0,0);
+*Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20   ,   100);
 
-temp.temporizar5(0,0,0,0);
-
-
--La primera cifra de la función es la correspondiente a los dias.
-
--La segunda cifra de la función es la correspondiente a las horas.
-
--La tercera cifra de la función es la correspondiente a los minutos.
-
--La cuarta cifra de la función es la correspondiente a los segundos.
+En este caso 1 dia 3 horas 40 minutos  20 segundos y 100 milisegundos.
 
 
-*Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20);
-
-En este caso 1 dia 3 horas 40 minutos y 20 segundos.
 
 
 #Usos
   
-  //se encenderá o apagará cuando transcurra un dia.
-  
-  if (temp.temporizar1(1, 0, 0, 0) == true) 
-  {digitalWrite(13, !digitalRead(13));} 
-   
- 
-  
-  Cuando el condicional sea "true" se ejecutará lo que tengamos dentro del if.
+#include <Temporizador.h>
+
+Temporizador temp; //-----> Declaramos una instancia  del temporizador
+
+void setup() {
+pinMode(2,OUTPUT); //-----> Declaramos el pin 2 como salida
+temp.iniciar(0,0,0,1,0);//-----> Iniciamos el temporizador por primera ves en este caso a un segundo
+}
+
+void loop() {
+//comprobamos si el tiempo definido ha transcurrido
+if(temp.completado()){ 
+  digitalWrite(2,!digitalRead(2)); //-----> En este caso al transcurrir el tiempo indicado invertimos el estado del pin 2
+  timer1.iniciar(0,0,0,1,0); //-----> volvemos a iniciar el temporizador para que se repita de nuevo en modo bucle
+}
+}
 
 
-
-
-
+*Podemos declarar tantas instancias como nos haga falta.
 
 
