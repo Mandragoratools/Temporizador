@@ -20,7 +20,7 @@ Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizado
 
 temp.temporizar(0,0,2,0,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
 
-
+temp.completado(); --------> Nos devolverá true cuando el tiempo indicado haya transcurrido.
 
 #Tener en cuenta
 
