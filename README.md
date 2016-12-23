@@ -16,7 +16,7 @@ Nos sirve para sustituir la función delay(); en nuestros sckechts y evitar así
 
 #Referencia
 
-- Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizador" seguido del nombre que deseemos en este caso "temp"
+- Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizador" seguido del nombre que deseemos.
 
 - temp.temporizar(0,0,2,0,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
 
