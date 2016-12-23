@@ -45,17 +45,18 @@ En este caso 1 dia 3 horas 40 minutos  20 segundos y 100 milisegundos.
   
 
  //-----> Declaramos una instancia  del temporizador
-Temporizador temp;
+
+  - Temporizador temp;
 
 
 //Iniciamos el temporizador por primera vez en el void setup(), en este caso a 1 segundo
 
-temp.temporizar(0,0,0,1,0);
+  - temp.temporizar(0,0,0,1,0);
 
 
 //comprobamos si el tiempo definido ha transcurrido, esto debe ir en el void loop().
 
-   if(temp.completado()){ 
+  - if(temp.completado()){ 
   
    digitalWrite(2,!digitalRead(2)); //-----> En este caso al transcurrir el tiempo indicado invertimos el estado del pin 2
   
