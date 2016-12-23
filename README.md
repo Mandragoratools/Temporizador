@@ -16,23 +16,23 @@ Nos sirve para sustituir la función delay(); en nuestros sckechts y evitar así
 
 #Referencia
 
-Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizador" seguido del nombre que deseemos en este caso "temp".
+- Temporizador temp;   --------> Instanciar el temporizador, usaremos "Temporizador" seguido del nombre que deseemos en este caso "temp"
 
-temp.temporizar(0,0,2,0,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
+- temp.temporizar(0,0,2,0,0); --------> En esta linea programaremos el tiempo deseado. en este caso 2 minutos.
 
-temp.completado(); --------> Nos devolverá true cuando el tiempo indicado haya transcurrido.
+- temp.completado(); --------> Nos devolverá true cuando el tiempo indicado haya transcurrido.
 
 #Tener en cuenta
 
--La 1ª cifra de la función es la correspondiente a los dias.
+ La 1ª cifra de la función es la correspondiente a los dias.
 
--La 2ª cifra de la función es la correspondiente a las horas.
+ La 2ª cifra de la función es la correspondiente a las horas.
 
--La 3ª cifra de la función es la correspondiente a los minutos.
+ La 3ª cifra de la función es la correspondiente a los minutos.
 
--La 4ª cifra de la función es la correspondiente a los segundos.
+ La 4ª cifra de la función es la correspondiente a los segundos.
 
--La 5ª cifra de la función es la correspondiente a los milisegundos.
+ La 5ª cifra de la función es la correspondiente a los milisegundos.
 
 *Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20   ,   100);
 
