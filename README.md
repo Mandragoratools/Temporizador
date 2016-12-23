@@ -53,8 +53,10 @@ temp.iniciar(0,0,0,1,0);
 
 
 //comprobamos si el tiempo definido ha transcurrido, esto debe ir en el void loop().
+
 if(temp.completado()){ 
   digitalWrite(2,!digitalRead(2)); //-----> En este caso al transcurrir el tiempo indicado invertimos el estado del pin 2
+  
   timer1.iniciar(0,0,0,1,0); //-----> volvemos a iniciar el temporizador para que se repita de nuevo en modo bucle
 }
 
