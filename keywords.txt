@@ -1,7 +1,0 @@
-Temporizador	KEYWORD1
-encender	KEYWORD2
-temporizar1	KEYWORD2
-temporizar2	KEYWORD2
-temporizar3	KEYWORD2
-temporizar4	KEYWORD2
-temporizar5	KEYWORD2
