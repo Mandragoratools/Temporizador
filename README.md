@@ -43,22 +43,21 @@ En este caso 1 dia 3 horas 40 minutos  20 segundos y 100 milisegundos.
 
 #Usos
   
-#include <Temporizador.h>
 
-Temporizador temp; //-----> Declaramos una instancia  del temporizador
+ //-----> Declaramos una instancia  del temporizador
+Temporizador temp;
 
-void setup() {
-pinMode(2,OUTPUT); //-----> Declaramos el pin 2 como salida
-temp.iniciar(0,0,0,1,0);//-----> Iniciamos el temporizador por primera ves en este caso a un segundo
-}
 
-void loop() {
-//comprobamos si el tiempo definido ha transcurrido
+//Iniciamos el temporizador por primera vez en el void setup(), en este caso a 1 segundo
+temp.iniciar(0,0,0,1,0);
+
+
+//comprobamos si el tiempo definido ha transcurrido, esto debe ir en el void loop().
 if(temp.completado()){ 
   digitalWrite(2,!digitalRead(2)); //-----> En este caso al transcurrir el tiempo indicado invertimos el estado del pin 2
   timer1.iniciar(0,0,0,1,0); //-----> volvemos a iniciar el temporizador para que se repita de nuevo en modo bucle
 }
-}
+
 
 
 *Podemos declarar tantas instancias como nos haga falta.
