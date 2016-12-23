@@ -34,7 +34,7 @@ Nos sirve para sustituir la función delay(); en nuestros sckechts y evitar así
 
  La 5ª cifra de la función es la correspondiente a los milisegundos.
 
-*Ejemplo: temp.temporizar1(1  ,  3   ,   40    ,   20   ,   100);
+*Ejemplo: temp.temporizar(1  ,  3   ,   40    ,   20   ,   100);
 
 En este caso 1 dia 3 horas 40 minutos  20 segundos y 100 milisegundos.
 
