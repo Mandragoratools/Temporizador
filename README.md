@@ -66,6 +66,6 @@ En este caso 1 dia 3 horas 40 minutos  20 segundos y 100 milisegundos.
 
 
 
-*Podemos declarar tantas instancias como nos haga falta.
+*Podemos declarar tantas instancias como sea necesario.
 
 
