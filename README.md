@@ -3,7 +3,7 @@ Copyrigth (c) Mandragora Tools 2016
 
 [mandragoratools@gmail.com](mailto:mandragoratools@gmail.com)
 
-[http://bit.ly/mandragoratools](http://bit.ly/mandragoratools)
+[http://mandragoratools.xyz](http://mandragoratools.xyz)
 
 *Especial agradecimiento a Alfaville, Lucario448  y surbyte
 
